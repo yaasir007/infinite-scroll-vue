@@ -4,7 +4,7 @@
 
 <template>
   <div class="scroll-container">
-    <div class="scroll" style="--time:20s">
+    <div class="scroll" style="--time:40s">
       <div>
         <span>Ruby</span>
         <span>HTML5</span>
@@ -30,7 +30,7 @@
         <span>C#</span>
       </div>
     </div>
-    <div class="scroll" style="--time:40s">
+    <div class="scroll-reverse" style="--time:50s">
       <div>
         <span>Visual Studio Code</span>
         <span>RubyMine</span>
@@ -88,7 +88,7 @@
         <span>Umbraco</span>
       </div>
     </div>
-    <div class="scroll" style="--time:20s">
+    <div class="scroll-reverse" style="--time:50s">
       <div>
         <span>AGILE</span>
         <span>SCRUM</span>
