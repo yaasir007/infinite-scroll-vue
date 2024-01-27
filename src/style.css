@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   box-sizing: border-box;
 }
 
@@ -70,6 +72,6 @@ body {
 }
 
 .scroll div span:hover {
-  background: #3fd2f9;
+  background: #2865ba;
   cursor: pointer;
 }
