@@ -15,7 +15,8 @@ const datas = props.items;
 </template>
 
 <style scoped>
-.scroll {
+.scroll,
+.scroll-reverse {
   position: relative;
   display: flex;
   width: 800px;
@@ -54,10 +55,11 @@ const datas = props.items;
   }
 }
 
-.scroll div span {
+.scroll div span,
+.scroll-reverse div span {
   display: inline-flex;
   margin: 10px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.05em;
   background: #136F63;
   color: #fff;
   padding: 10px 15px;
@@ -65,20 +67,13 @@ const datas = props.items;
   transition: 0.5s;
 }
 
-.scroll div span:hover {
+.scroll div span:hover,
+.scroll-reverse div span:hover {
   background: #2865ba;
   cursor: pointer;
 }
 
 /* For reverse animation */
-.scroll-reverse {
-  position: relative;
-  display: flex;
-  width: 800px;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
-}
-
 .scroll-reverse div {
   white-space: nowrap;
   animation: scroll-first-reverse var(--time) linear infinite;
@@ -108,21 +103,5 @@ const datas = props.items;
   100% {
     transform: translateX(0%);
   }
-}
-
-.scroll-reverse div span {
-  display: inline-flex;
-  margin: 10px;
-  letter-spacing: 0.2em;
-  background: #136F63;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.scroll-reverse div span:hover {
-  background: #2865ba;
-  cursor: pointer;
 }
 </style>
